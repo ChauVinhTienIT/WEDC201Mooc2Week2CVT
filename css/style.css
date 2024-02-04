@@ -1,19 +1,42 @@
+html {
+    background-color: bisque;
+}
+
+
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-    background-color: rgb(135, 135, 135);
+header{
+    display: flexbox;
 }
 
 nav {
-    background-color: aquamarine;
+    background-color: rgb(219, 219, 219);
+    align-items: center;
+    margin: 1%;
+    
 }
 
+ul{
+    display: flex;
+    text-align: center;
+
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 
 li {
-    display: inline-block;
-    width: 20%;
+    display: block;
+    width: 15%;
+    padding: 2%;
+}
+
+#navImage{
+    width: 50%;
+    height: 50%;
 }
 
 h1 {
@@ -31,4 +54,29 @@ footer{
     background-color: rgb(146, 146, 146);
 }
 
+
+
+.image-menu{
+    display: grid;
+    grid-template-columns: 30% 30%;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
+}
+
+.image-menu > img {
+    padding: 2%;
+    width: 70%;
+    height: 70%;
+}
+
+.image-flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: row;
+}
 
